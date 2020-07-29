@@ -11,8 +11,6 @@ Source0: https://github.com/knro/ekosdebugger/archive/master.tar.gz
 
 BuildRequires: cmake
 BuildRequires: systemd
-BuildRequires: indi-libs
-BuildRequires: indi-devel
 
 BuildRequires: pkgconfig(libcurl)
 BuildRequires: pkgconfig(zlib)
