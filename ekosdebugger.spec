@@ -11,6 +11,9 @@ Source0: https://github.com/knro/ekosdebugger/archive/master.tar.gz
 
 BuildRequires: cmake
 BuildRequires: systemd
+BuildRequires: boost-devel
+BuildRequires: boost-regex
+
 
 BuildRequires: pkgconfig(libcurl)
 BuildRequires: pkgconfig(zlib)
