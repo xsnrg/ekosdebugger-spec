@@ -14,6 +14,7 @@ BuildRequires: gcc-c++
 BuildRequires: systemd
 BuildRequires: boost-devel
 BuildRequires: boost-regex
+BuildRequires: qt5-devel
 
 
 BuildRequires: pkgconfig(libcurl)
