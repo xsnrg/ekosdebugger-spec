@@ -10,6 +10,7 @@ URL: https://indilib.org
 Source0: https://github.com/knro/ekosdebugger/archive/master.tar.gz
 
 BuildRequires: cmake
+BuildRequires: gcc-c++
 BuildRequires: systemd
 BuildRequires: boost-devel
 BuildRequires: boost-regex
@@ -18,20 +19,17 @@ BuildRequires: boost-regex
 BuildRequires: pkgconfig(libcurl)
 BuildRequires: pkgconfig(zlib)
 
-
 %description
 Ekos Debugger is a helper application to KStars, Ekos, and INDI debugging. It can be used to troubleshoot KStars, INDI, or both.
-
 The generated log files can be shared with developers in order to investigate any issues with the software and help to improve it.
 
 %prep
 %setup -n ekosdebugger-master
 
 %build
-%define _lto_cflags %{nil}
 
 %cmake .
-make VERBOSE=1 %{?_smp_mflags} -j4
+make %{?_smp_mflags} -j4
 
 %install
 make DESTDIR=%{buildroot} install
