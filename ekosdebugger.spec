@@ -1,6 +1,6 @@
 Name: ekosdebugger
 Version: 0.0.1.git
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Ekos Debugger
 
 License: LGPLv2
