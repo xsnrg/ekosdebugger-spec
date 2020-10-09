@@ -16,11 +16,11 @@ BuildRequires: gcc-c++
 BuildRequires: systemd
 BuildRequires: boost-devel
 BuildRequires: boost-regex
-BuildRequires: qt5-devel
 
 
 BuildRequires: pkgconfig(libcurl)
 BuildRequires: pkgconfig(zlib)
+BuildRequires: pkgconfig(qt5)
 
 %description
 Ekos Debugger is a helper application to KStars, Ekos, and INDI debugging. It can be used to troubleshoot KStars, INDI, or both.
