@@ -1,7 +1,7 @@
 %define __cmake_in_source_build %{_vpath_builddir}
 
 Name: ekosdebugger
-Version: 0.0.1.git
+Version: 1.1.0.git
 Release: %(date -u +%%Y%%m%%d%%H%%M%%S)%{?dist}
 Summary: Ekos Debugger
 
@@ -16,7 +16,6 @@ BuildRequires: gcc-c++
 BuildRequires: systemd
 BuildRequires: boost-devel
 BuildRequires: boost-regex
-
 
 BuildRequires: pkgconfig(libcurl)
 BuildRequires: pkgconfig(zlib)
@@ -42,8 +41,6 @@ make DESTDIR=%{buildroot} install
 %doc README.md
 %{_bindir}/*
 
-
 %changelog
 * Wed Jul 29 2020 Jim Howard <jh.xsnrg+fedora@gmail.com> 0.0.1.git-1
 - added spec for copr
-
